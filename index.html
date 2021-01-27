@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="menu">
+            
+            <div class="menu__logo">
+                <img src="img/logo.png" alt="bank_a">
+            </div>
+
+            <div class="menu__list">
+                <ul>
+                    <li class="menu__list_first-child">БАНК</li>
+                    <li>БИЗНЕС</li>
+                    <li>ИНВЕСТИЦИИ</li>
+                    <li>СТРАХОВАНИЕ</li>
+                    <li>МОБАЙЛ</li>
+                    <li>ПУТЕШЕСТВИЯ</li>
+                    <li>РАЗВЛЕЧЕНИЯ</li>
+                </ul>
+            </div>
+
+                <button class="menu__button">ВОЙТИ</button>
+        </header>
+        
+        <main class="container">
+            <h1>Конвертер валют онлайн</h1>
+
+            <div class="converter">
+
+                <div class="converter__left-side">
+                    <h3>У меня есть</h3>
+                    
+                    <div class="converter__left-side_choose-value">
+                        <button class="converter__left-side">RUB</button><button class="converter__left-side">USD</button><button class="converter__left-side">EUR</button><button class="converter__left-side">GBP</button><select class="converter__left-side">
+                        <option>HKD</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>DKK</option>
+                        <option>INR</option>
+                        <option>CHF</option>
+                        <option>MXN</option>
+                        <option>CZK</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>HRK</option>
+                        <option>MYR</option>
+                        <option>NOK</option>
+                        <option>CNY</option>
+                        <option>BGN</option>
+                        <option>PHP</option>
+                        <option>SEK</option>
+                        <option>PLN</option>
+                        <option>ZAR</option>
+                        <option>CAD</option>
+                        <option>ISK</option>
+                        <option>BRL</option>
+                        <option>RON</option>
+                        <option>NZD</option>
+                        <option>TRY</option>
+                        <option>JPY</option>
+                        <option>KRW</option>
+                        <option>HUF</option>
+                        <option>AUD</option></select>
+                    </div>
+                    
+                    <div class="text">
+                        <div class="input">
+                            <input class="converter__left-side" type="text">
+                        </div>
+                        <p>1 RUB = 0.0135USD</p>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="converter__midle-side">
+                    <button class="converter__midle-side_change-sides-a">
+                        <img src="img/Group 3.png" alt="arrow-right-side">
+                    </button>
+                    <button class="converter__midle-side_change-sides-b">
+                        <img src="img/Group 4.png" alt="arrow-left-side">
+                    </button>
+                </div>
+
+                <div class="converter__right-side">
+                    <h3>Хочу приобрести</h3>
+                    
+                    <div class="converter__right-side_choose-value">
+                        <button class="converter__right-side">RUB</button><button class="converter__right-side">USD</button><button class="converter__right-side">EUR</button><button class="converter__right-side">GBP</button><select class="converter__right-side">
+                        <option>HKD</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>DKK</option>
+                        <option>INR</option>
+                        <option>CHF</option>
+                        <option>MXN</option>
+                        <option>CZK</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>HRK</option>
+                        <option>MYR</option>
+                        <option>NOK</option>
+                        <option>CNY</option>
+                        <option>BGN</option>
+                        <option>PHP</option>
+                        <option>SEK</option>
+                        <option>PLN</option>
+                        <option>ZAR</option>
+                        <option>CAD</option>
+                        <option>ISK</option>
+                        <option>BRL</option>
+                        <option>RON</option>
+                        <option>NZD</option>
+                        <option>TRY</option>
+                        <option>JPY</option>
+                        <option>KRW</option>
+                        <option>HUF</option>
+                        <option>AUD</option>
+                    </select>
+                    </div>
+
+                    <div class="text">
+                        <div class="input">
+                            <input class="converter__left-side" type="text">
+                        </div>
+                        <p>1 USD = 73.8896 RUB</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
