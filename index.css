@@ -202,3 +202,7 @@ button:hover {
 select:hover {
     cursor: pointer;
 }
+
+input:focus {
+    outline: none;
+}

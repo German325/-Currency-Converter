@@ -34,6 +34,13 @@ buttonActiveL.forEach((item)=>{
         
         
         loadData(valueInButtonL, valueInButtonR);
+
+
+        fetch(`https://api.ratesapi.io/api/latest?base=${valueInButtonL}&symbols=${valueInButtonR}`)
+        .then((response)=>response.json())
+        .then((data)=>{
+            inputRight.value = inputLeft.value * data.rates[`${valueInButtonR}`];
+        })
         
     });
 });
@@ -52,6 +59,12 @@ buttonActiveR.forEach((item)=>{
             valueInButtonR = item.value
         }
         loadData(valueInButtonL, valueInButtonR);
+
+        fetch(`https://api.ratesapi.io/api/latest?base=${valueInButtonL}&symbols=${valueInButtonR}`)
+        .then((response)=>response.json())
+        .then((data)=>{
+            inputRight.value = inputLeft.value * data.rates[`${valueInButtonR}`];
+        })
         
     });
 });
