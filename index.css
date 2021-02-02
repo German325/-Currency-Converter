@@ -71,6 +71,17 @@ body {
     margin-left: 40px;
 }
 
+.converter__right-side .active {
+    background-color: #833AE0;
+    color: white;
+}
+
+.converter__left-side .active {
+    background-color: #833AE0;
+    color: white;
+}
+
+
 .converter {
     display: flex;
     justify-content: space-evenly;
@@ -128,10 +139,12 @@ p {
 
 /*midle side*/
 .converter__midle-side{
-    width : 36.85px;
-    height : 31.77px;
+    width : 50px;
+    height : 44px;
     position: relative;
-    top: 134px;
+    top: 66px;
+    border: unset;
+    background-color: unset;
 }
 
 .converter__midle-side_change-sides-a, .converter__midle-side_change-sides-b {
@@ -154,6 +167,10 @@ p {
     margin-left: 10px;
 }
 
+.converter__right-side select{
+    margin-left: 0;
+}
+
 .converter__right-side_choose-value {
     margin: auto auto;
 }
@@ -170,23 +187,18 @@ p {
     border: 1px solid #E5E5E5;  
 }
 
-/*hover*/
-.converter__right-side button:hover {
-    background-color: #833AE0;
-    color: white;
+.converter__right-side input {
+    margin: 0;
 }
 
-.converter__right-side select:hover {
-    background-color: #833AE0;
-    color: white;
+button:focus {
+    outline: none;
 }
 
-.converter__left-side button:hover {
-    background-color: #833AE0;
-    color: white;
+button:hover {
+    cursor: pointer;
 }
 
-.converter__left-side select:hover {
-    background-color: #833AE0;
-    color: white;
+select:hover {
+    cursor: pointer;
 }
